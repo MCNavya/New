@@ -134,6 +134,7 @@
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Controllers\AllotmentController.cs" />
     <Compile Include="Controllers\HiringManagerController.cs" />
     <Compile Include="Controllers\LoginController.cs" />
     <Compile Include="Controllers\RequirementController.cs" />
@@ -159,6 +160,7 @@
     <Content Include="Scripts\jquery-3.3.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.3.1.min.map" />
     <Content Include="Views\HiringManager\HireManager.cshtml" />
+    <Content Include="Views\Allotment\Allotment.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

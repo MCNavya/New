@@ -1,0 +1,33 @@
+﻿
+@{
+    ViewBag.Title = "Allotment";
+}
+
+<h2>Allotment</h2>
+
+<form>
+    <h2>Employee details</h2>
+    <table>
+        <tr><th>Emp Id</th></tr>
+        <tr><th>Emp Name</th></tr>
+        <tr><th>Buiseness Line</th></tr>
+        <tr><th>Designation</th></tr>
+        <tr><th>Status</th></tr>
+        <tr><th>JobExperience</th></tr>
+
+        @foreach (var item in Model)
+        {
+            <tr><td>@item.EmpId</td></tr>
+            <tr><td>@item.EmpName</td></tr>
+            <tr><td>@item.BId</td></tr>
+            <tr><td>@item.Designation</td></tr>
+            <tr><td>@item.Status</td></tr>
+            <tr><td>@item.JobExperience</td></tr>
+            <tr><td>@Html.ActionLink("Assign", "AssignEmp", null, new { @class = "btn btn-primary btn-large" })</td></tr>
+
+
+        }
+
+    </table>
+</form>
+
